@@ -1,0 +1,31 @@
+2025-01-21 23:20:00,444 - INFO - Starting experiment in directory: clustering_experiments\comparison_20250121_224535\results\spectral_12\spectral_12
+2025-01-21 23:20:00,444 - INFO - Configuration: {'checkpointing': {'dir': 'checkpoints', 'enabled': True, 'frequency': 5, 'keep_best': True, 'max_to_keep': 3}, 'clustering': {'algorithm': 'spectral', 'cluster_candidates': [3, 4, 5], 'clustering_type': 'data_features', 'drift_threshold': 0.3, 'min_cluster_size': 2, 'pca_components': 10, 'update_frequency': 5}, 'data': {'batch_size': 16, 'dataset_name': 'mnist', 'iid': False, 'num_clients': 50}, 'fed': {'client_sample_ratio': 0.2, 'local_epochs': 5, 'min_delta': 0.001, 'min_rounds_before_early_stopping': 5, 'num_rounds': 10, 'patience': 5}, 'logging': {'log_file': 'federated.log', 'log_interval': 10, 'save_dir': 'checkpoints', 'save_model': True}, 'model': {'input_channels': 1, 'learning_rate': 0.01, 'momentum': 0.9, 'name': 'cnn', 'num_classes': 10, 'weight_decay': 0.0001}}
+2025-01-21 23:20:08,754 - WARNING - Selected k=5 has low stability
+2025-01-21 23:20:08,816 - INFO - Clustering completed with 5 clusters
+2025-01-21 23:20:08,816 - INFO - Updated clustering: 5 clusters
+2025-01-21 23:20:08,816 - INFO - Starting round 1
+2025-01-21 23:20:32,426 - WARNING - Selected k=7 has low stability
+2025-01-21 23:20:32,483 - INFO - Clustering completed with 7 clusters
+2025-01-21 23:20:32,483 - INFO - Updated clustering: 7 clusters
+2025-01-21 23:20:32,488 - INFO - Round 1 completed: Accuracy = 0.6366, Loss = 1.0352
+2025-01-21 23:20:32,488 - INFO - Starting round 2
+2025-01-21 23:20:49,340 - INFO - Round 2 completed: Accuracy = 0.9484, Loss = 0.1780
+2025-01-21 23:20:49,341 - INFO - Starting round 3
+2025-01-21 23:21:08,625 - INFO - Round 3 completed: Accuracy = 0.9734, Loss = 0.0872
+2025-01-21 23:21:08,625 - INFO - Starting round 4
+2025-01-21 23:21:28,543 - INFO - Round 4 completed: Accuracy = 0.9770, Loss = 0.0721
+2025-01-21 23:21:28,543 - INFO - Starting round 5
+2025-01-21 23:21:45,743 - INFO - Round 5 completed: Accuracy = 0.9783, Loss = 0.0679
+2025-01-21 23:21:45,744 - INFO - Starting round 6
+2025-01-21 23:22:07,588 - INFO - Round 6 completed: Accuracy = 0.9827, Loss = 0.0491
+2025-01-21 23:22:07,589 - INFO - Starting round 7
+2025-01-21 23:22:24,840 - INFO - Round 7 completed: Accuracy = 0.9863, Loss = 0.0463
+2025-01-21 23:22:24,840 - INFO - Starting round 8
+2025-01-21 23:22:44,449 - INFO - Round 8 completed: Accuracy = 0.9878, Loss = 0.0395
+2025-01-21 23:22:44,449 - INFO - Starting round 9
+2025-01-21 23:23:02,504 - INFO - Round 9 completed: Accuracy = 0.9865, Loss = 0.0402
+2025-01-21 23:23:02,504 - INFO - Starting round 10
+2025-01-21 23:23:17,284 - INFO - Round 10 completed: Accuracy = 0.9891, Loss = 0.0359
+2025-01-21 23:23:17,295 - INFO - Results saved successfully in clustering_experiments\comparison_20250121_224535\results\spectral_12\spectral_12
+2025-01-21 23:23:17,299 - INFO - Experiment completed successfully
+2025-01-21 23:23:17,299 - INFO - Final Results - Accuracy: 0.9891

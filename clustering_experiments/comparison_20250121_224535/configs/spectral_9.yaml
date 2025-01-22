@@ -1,0 +1,41 @@
+checkpointing:
+  dir: checkpoints
+  enabled: true
+  frequency: 5
+  keep_best: true
+  max_to_keep: 3
+clustering:
+  algorithm: spectral
+  cluster_candidates:
+  - 2
+  - 3
+  - 4
+  clustering_type: data_features
+  drift_threshold: 0.3
+  min_cluster_size: 2
+  pca_components: 5
+  update_frequency: 5
+data:
+  batch_size: 16
+  dataset_name: mnist
+  iid: false
+  num_clients: 50
+fed:
+  client_sample_ratio: 0.2
+  local_epochs: 5
+  min_delta: 0.001
+  min_rounds_before_early_stopping: 5
+  num_rounds: 10
+  patience: 5
+logging:
+  log_file: federated.log
+  log_interval: 10
+  save_dir: checkpoints
+  save_model: true
+model:
+  input_channels: 1
+  learning_rate: 0.01
+  momentum: 0.9
+  name: cnn
+  num_classes: 10
+  weight_decay: 0.0001

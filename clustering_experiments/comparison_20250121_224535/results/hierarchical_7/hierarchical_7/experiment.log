@@ -1,0 +1,29 @@
+2025-01-21 23:04:17,528 - INFO - Starting experiment in directory: clustering_experiments\comparison_20250121_224535\results\hierarchical_7\hierarchical_7
+2025-01-21 23:04:17,528 - INFO - Configuration: {'checkpointing': {'dir': 'checkpoints', 'enabled': True, 'frequency': 5, 'keep_best': True, 'max_to_keep': 3}, 'clustering': {'algorithm': 'hierarchical', 'cluster_candidates': [2, 3, 4], 'clustering_type': 'label_distribution', 'drift_threshold': 0.3, 'min_cluster_size': 2, 'pca_components': 10, 'update_frequency': 5}, 'data': {'batch_size': 16, 'dataset_name': 'mnist', 'iid': False, 'num_clients': 50}, 'fed': {'client_sample_ratio': 0.2, 'local_epochs': 5, 'min_delta': 0.001, 'min_rounds_before_early_stopping': 5, 'num_rounds': 10, 'patience': 5}, 'logging': {'log_file': 'federated.log', 'log_interval': 10, 'save_dir': 'checkpoints', 'save_model': True}, 'model': {'input_channels': 1, 'learning_rate': 0.01, 'momentum': 0.9, 'name': 'cnn', 'num_classes': 10, 'weight_decay': 0.0001}}
+2025-01-21 23:04:23,032 - INFO - Clustering completed with 4 clusters
+2025-01-21 23:04:23,032 - INFO - Updated clustering: 4 clusters
+2025-01-21 23:04:23,032 - INFO - Starting round 1
+2025-01-21 23:04:42,759 - INFO - Clustering completed with 5 clusters
+2025-01-21 23:04:42,759 - INFO - Updated clustering: 5 clusters
+2025-01-21 23:04:42,763 - INFO - Round 1 completed: Accuracy = 0.6792, Loss = 0.9071
+2025-01-21 23:04:42,763 - INFO - Starting round 2
+2025-01-21 23:05:01,856 - INFO - Round 2 completed: Accuracy = 0.9483, Loss = 0.1659
+2025-01-21 23:05:01,856 - INFO - Starting round 3
+2025-01-21 23:05:18,943 - INFO - Round 3 completed: Accuracy = 0.9743, Loss = 0.0818
+2025-01-21 23:05:18,943 - INFO - Starting round 4
+2025-01-21 23:05:34,342 - INFO - Round 4 completed: Accuracy = 0.9799, Loss = 0.0626
+2025-01-21 23:05:34,342 - INFO - Starting round 5
+2025-01-21 23:05:54,186 - INFO - Round 5 completed: Accuracy = 0.9803, Loss = 0.0608
+2025-01-21 23:05:54,186 - INFO - Starting round 6
+2025-01-21 23:06:08,411 - INFO - Round 6 completed: Accuracy = 0.9840, Loss = 0.0508
+2025-01-21 23:06:08,411 - INFO - Starting round 7
+2025-01-21 23:06:23,096 - INFO - Round 7 completed: Accuracy = 0.9849, Loss = 0.0487
+2025-01-21 23:06:23,096 - INFO - Starting round 8
+2025-01-21 23:06:39,701 - INFO - Round 8 completed: Accuracy = 0.9851, Loss = 0.0485
+2025-01-21 23:06:39,701 - INFO - Starting round 9
+2025-01-21 23:06:55,824 - INFO - Round 9 completed: Accuracy = 0.9866, Loss = 0.0419
+2025-01-21 23:06:55,824 - INFO - Starting round 10
+2025-01-21 23:07:12,282 - INFO - Round 10 completed: Accuracy = 0.9850, Loss = 0.0466
+2025-01-21 23:07:12,293 - INFO - Results saved successfully in clustering_experiments\comparison_20250121_224535\results\hierarchical_7\hierarchical_7
+2025-01-21 23:07:12,297 - INFO - Experiment completed successfully
+2025-01-21 23:07:12,297 - INFO - Final Results - Accuracy: 0.9850

@@ -1,0 +1,304 @@
+{
+  "total_experiments": 16,
+  "successful_experiments": 16,
+  "failed_experiments": 0,
+  "timestamp": "2025-01-21T23:35:05.715054",
+  "federated_learning_params": {
+    "num_rounds": 10,
+    "local_epochs": 5,
+    "client_sample_ratio": 0.2,
+    "patience": 5,
+    "min_delta": 0.001,
+    "min_rounds_before_early_stopping": 5
+  },
+  "results": [
+    {
+      "variant": "kmeans_1",
+      "clustering_config": {
+        "algorithm": "kmeans",
+        "clustering_type": "model_weights",
+        "pca_components": 5,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T22:48:41.932230"
+    },
+    {
+      "variant": "kmeans_2",
+      "clustering_config": {
+        "algorithm": "kmeans",
+        "clustering_type": "model_weights",
+        "pca_components": 5,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T22:51:51.566217"
+    },
+    {
+      "variant": "kmeans_3",
+      "clustering_config": {
+        "algorithm": "kmeans",
+        "clustering_type": "model_weights",
+        "pca_components": 10,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T22:54:57.211175"
+    },
+    {
+      "variant": "kmeans_4",
+      "clustering_config": {
+        "algorithm": "kmeans",
+        "clustering_type": "model_weights",
+        "pca_components": 10,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T22:58:07.225702"
+    },
+    {
+      "variant": "hierarchical_5",
+      "clustering_config": {
+        "algorithm": "hierarchical",
+        "clustering_type": "label_distribution",
+        "pca_components": 5,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:01:12.168972"
+    },
+    {
+      "variant": "hierarchical_6",
+      "clustering_config": {
+        "algorithm": "hierarchical",
+        "clustering_type": "label_distribution",
+        "pca_components": 5,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:04:14.640407"
+    },
+    {
+      "variant": "hierarchical_7",
+      "clustering_config": {
+        "algorithm": "hierarchical",
+        "clustering_type": "label_distribution",
+        "pca_components": 10,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:07:12.792871"
+    },
+    {
+      "variant": "hierarchical_8",
+      "clustering_config": {
+        "algorithm": "hierarchical",
+        "clustering_type": "label_distribution",
+        "pca_components": 10,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:10:43.498814"
+    },
+    {
+      "variant": "spectral_9",
+      "clustering_config": {
+        "algorithm": "spectral",
+        "clustering_type": "data_features",
+        "pca_components": 5,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:13:39.330674"
+    },
+    {
+      "variant": "spectral_10",
+      "clustering_config": {
+        "algorithm": "spectral",
+        "clustering_type": "data_features",
+        "pca_components": 5,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:16:42.550573"
+    },
+    {
+      "variant": "spectral_11",
+      "clustering_config": {
+        "algorithm": "spectral",
+        "clustering_type": "data_features",
+        "pca_components": 10,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:19:57.529405"
+    },
+    {
+      "variant": "spectral_12",
+      "clustering_config": {
+        "algorithm": "spectral",
+        "clustering_type": "data_features",
+        "pca_components": 10,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:23:17.792418"
+    },
+    {
+      "variant": "gmm_13",
+      "clustering_config": {
+        "algorithm": "gmm",
+        "clustering_type": "model_weights",
+        "pca_components": 5,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:26:10.851364"
+    },
+    {
+      "variant": "gmm_14",
+      "clustering_config": {
+        "algorithm": "gmm",
+        "clustering_type": "model_weights",
+        "pca_components": 5,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:29:04.153946"
+    },
+    {
+      "variant": "gmm_15",
+      "clustering_config": {
+        "algorithm": "gmm",
+        "clustering_type": "model_weights",
+        "pca_components": 10,
+        "cluster_candidates": [
+          2,
+          3,
+          4
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:32:00.281680"
+    },
+    {
+      "variant": "gmm_16",
+      "clustering_config": {
+        "algorithm": "gmm",
+        "clustering_type": "model_weights",
+        "pca_components": 10,
+        "cluster_candidates": [
+          3,
+          4,
+          5
+        ],
+        "min_cluster_size": 2,
+        "drift_threshold": 0.3,
+        "update_frequency": 5
+      },
+      "success": true,
+      "timestamp": "2025-01-21T23:35:05.714052"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+2025-01-21 22:51:54,457 - INFO - Starting experiment in directory: clustering_experiments\comparison_20250121_224535\results\kmeans_3\kmeans_3
+2025-01-21 22:51:54,457 - INFO - Configuration: {'checkpointing': {'dir': 'checkpoints', 'enabled': True, 'frequency': 5, 'keep_best': True, 'max_to_keep': 3}, 'clustering': {'algorithm': 'kmeans', 'cluster_candidates': [2, 3, 4], 'clustering_type': 'model_weights', 'drift_threshold': 0.3, 'min_cluster_size': 2, 'pca_components': 10, 'update_frequency': 5}, 'data': {'batch_size': 16, 'dataset_name': 'mnist', 'iid': False, 'num_clients': 50}, 'fed': {'client_sample_ratio': 0.2, 'local_epochs': 5, 'min_delta': 0.001, 'min_rounds_before_early_stopping': 5, 'num_rounds': 10, 'patience': 5}, 'logging': {'log_file': 'federated.log', 'log_interval': 10, 'save_dir': 'checkpoints', 'save_model': True}, 'model': {'input_channels': 1, 'learning_rate': 0.01, 'momentum': 0.9, 'name': 'cnn', 'num_classes': 10, 'weight_decay': 0.0001}}
+2025-01-21 22:51:55,419 - WARNING - Selected k=7 has low stability
+2025-01-21 22:51:55,437 - INFO - Clustering completed with 7 clusters
+2025-01-21 22:51:55,437 - INFO - Updated clustering: 7 clusters
+2025-01-21 22:51:55,437 - INFO - Starting round 1
+2025-01-21 22:52:14,457 - WARNING - Selected k=2 has low stability
+2025-01-21 22:52:14,474 - INFO - Clustering completed with 2 clusters
+2025-01-21 22:52:14,474 - INFO - Updated clustering: 2 clusters
+2025-01-21 22:52:14,478 - INFO - Round 1 completed: Accuracy = 0.7719, Loss = 0.7294
+2025-01-21 22:52:14,478 - INFO - Starting round 2
+2025-01-21 22:52:33,132 - INFO - Round 2 completed: Accuracy = 0.9293, Loss = 0.2232
+2025-01-21 22:52:33,133 - INFO - Starting round 3
+2025-01-21 22:52:48,372 - INFO - Round 3 completed: Accuracy = 0.9750, Loss = 0.0749
+2025-01-21 22:52:48,372 - INFO - Starting round 4
+2025-01-21 22:53:08,957 - INFO - Round 4 completed: Accuracy = 0.9763, Loss = 0.0682
+2025-01-21 22:53:08,957 - INFO - Starting round 5
+2025-01-21 22:53:25,552 - INFO - Round 5 completed: Accuracy = 0.9809, Loss = 0.0603
+2025-01-21 22:53:25,552 - INFO - Starting round 6
+2025-01-21 22:53:44,672 - INFO - Round 6 completed: Accuracy = 0.9843, Loss = 0.0472
+2025-01-21 22:53:44,672 - INFO - Starting round 7
+2025-01-21 22:54:03,161 - INFO - Round 7 completed: Accuracy = 0.9853, Loss = 0.0439
+2025-01-21 22:54:03,161 - INFO - Starting round 8
+2025-01-21 22:54:19,855 - INFO - Round 8 completed: Accuracy = 0.9872, Loss = 0.0385
+2025-01-21 22:54:19,856 - INFO - Starting round 9
+2025-01-21 22:54:38,504 - INFO - Round 9 completed: Accuracy = 0.9879, Loss = 0.0381
+2025-01-21 22:54:38,504 - INFO - Starting round 10
+2025-01-21 22:54:56,713 - INFO - Round 10 completed: Accuracy = 0.9874, Loss = 0.0380
+2025-01-21 22:54:56,723 - INFO - Results saved successfully in clustering_experiments\comparison_20250121_224535\results\kmeans_3\kmeans_3
+2025-01-21 22:54:56,729 - INFO - Experiment completed successfully
+2025-01-21 22:54:56,729 - INFO - Final Results - Accuracy: 0.9874

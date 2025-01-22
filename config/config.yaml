@@ -1,0 +1,57 @@
+# config/config.yaml
+
+# Dataset Configuration
+data:
+  dataset_name: "mnist"
+  batch_size: 16
+  num_clients: 50
+  iid: false
+
+# Model Configuration
+model:
+  name: "cnn"
+  input_channels: 1
+  num_classes: 10
+  learning_rate: 0.01
+  momentum: 0.9
+  weight_decay: 0.0001
+
+# Federated Learning Configuration
+fed:
+  num_rounds: 10
+  local_epochs: 5
+  client_sample_ratio: 0.2
+  patience: 10  # Increased from 5
+  min_delta: 0.0005  # Reduced from 0.001
+  min_rounds_before_early_stopping: 5 
+
+# Clustering Configuration
+clustering:
+  algorithm: "kmeans"
+  cluster_candidates: [2, 3, 4, 5]
+  clustering_type: "model_weights"
+  pca_components: 5
+  min_cluster_size: 2
+  drift_threshold: 0.3
+  update_frequency: 5
+  min_cluster_stability_rounds: 3 
+  hierarchical_linkages: ['ward', 'complete', 'average'] 
+  spectral_affinities: ['rbf', 'nearest_neighbors']  
+  gmm_covariance_types: ['full', 'tied', 'diag']  
+  cluster_balance_threshold: 0.3 
+  min_cluster_size_ratio: 0.1  
+
+# Logging Configuration
+logging:
+  log_interval: 10
+  save_model: true
+  save_dir: "checkpoints"
+  log_file: "federated.log"
+
+# Checkpointing Configuration
+checkpointing:
+  enabled: true
+  dir: "checkpoints"
+  frequency: 5  # Save checkpoint every N rounds
+  keep_best: true  # Keep best model based on validation accuracy
+  max_to_keep: 3  # Maximum number of checkpoints to keep
