@@ -1,6 +1,6 @@
 # Federated Learning with Adaptive Clustering
 
-A modular implementation of federated learning with dynamic clustering strategies for client grouping and optimization.
+Ongoing project: A modular implementation of federated learning with dynamic clustering strategies for client grouping and optimization.
 
 ## Features
 
